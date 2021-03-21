@@ -2,6 +2,8 @@
 
 #include "doctest.h"
 
+#include <vector>
+
 TEST_CASE("heapsort values") {
     std::vector<int> source = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
     const std::vector<int> expected = {1, 2, 3, 4, 7, 8, 9, 10, 14, 16};

@@ -22,6 +22,7 @@ TEST_BINARY := main_test
 
 .PHONY: all
 all: $(TEST_BINARY)
+> ./$(TEST_BINARY)
 
 %.o: %.cpp $(HEADERS)
 >$(CXX) -c $(CXXFLAGS) $(INCLUDE) -o $@ $<
